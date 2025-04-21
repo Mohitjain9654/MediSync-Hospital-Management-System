@@ -1,0 +1,221 @@
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #121212; /* Deep charcoal background */
+  color: #E0E0E0; /* Light gray text */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header */
+h1 {
+  text-align: center;
+  background-color: #1F1F1F; /* Slightly lighter dark background */
+  color: #FFFFFF; /* White text for contrast */
+  padding: 40px 20px;
+  margin: 0;
+  font-family: "Satisfy", cursive;
+  font-size: 3.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  border-bottom: 4px solid #FF7043; /* Warm coral accent */
+  transition: background-color 0.3s ease;
+}
+
+h1:hover {
+  background-color: #FF7043; /* Vibrant coral accent on hover */
+}
+
+/* Navigation Bar */
+nav {
+  background-color: #212121; /* Darker navigation background */
+  padding: 20px 30px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #B0BEC5; /* Light blue-gray text */
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+  letter-spacing: 1px;
+}
+
+nav ul li a:hover {
+  color: #FF7043; /* Warm coral on hover */
+  transform: scale(1.1);
+}
+
+/* Content Section */
+.content {
+  padding: 50px 30px;
+  max-width: 1200px;
+  margin: 30px auto;
+  /* background-color: #263238; */
+  background: url('https://developer.microsoft.com/_devcom/images/views/index/background_2800_50.avif') no-repeat center center fixed;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  border-radius: 12px;
+  transition: box-shadow 0.3s ease;
+}
+
+.content:hover {
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+}
+
+/* Table Styling */
+.table-title {
+  font-family: "Bungee Spice", sans-serif;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  color: #FFFFFF; /* White text */
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  background-color: #37474F; /* Dark blue-gray table background */
+}
+
+.data-table th,
+.data-table td {
+  border: 1px solid #455A64;
+  padding: 15px;
+  text-align: left;
+  font-size: 1.1rem;
+  color: #E0E0E0; /* Light gray text */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.data-table th {
+  background-color: #FF7043; /* Coral header */
+  font-weight: bold;
+}
+
+.data-table tr:nth-child(even) {
+  background-color: #455A64; /* Slightly darker rows for contrast */
+}
+
+.data-table tr:hover {
+  background-color: #FF7043; /* Coral on hover */
+  color: #FFFFFF;
+}
+
+.table-container {
+  margin: 30px 0;
+  overflow-x: auto;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+/* Button Styling */
+button {
+  background-color: #FF7043; /* Coral background */
+  color: #FFFFFF;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background-color: #D32F2F; /* Darker red-coral on hover */
+  transform: scale(1.05);
+}
+
+/* Form Inputs */
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+  background-color: #263238; /* Dark blue-gray background */
+  color: #B0BEC5; /* Light gray text */
+  padding: 15px;
+  border: 1px solid #455A64;
+  border-radius: 6px;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  width: 100%;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+select:focus,
+textarea:focus {
+  border-color: #FF7043; /* Coral border on focus */
+  outline: none;
+}
+
+/* Footer */
+footer {
+  background-color: #37474F; /* Dark footer background */
+  padding: 20px;
+  text-align: center;
+  color: #B0BEC5; /* Light text */
+  font-size: 1rem;
+}
+
+footer a {
+  color: #FF7043; /* Coral links */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  color: #D32F2F; /* Darker red-coral on hover */
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .data-table th, .data-table td {
+    padding: 12px;
+  }
+
+  .table-title {
+    font-size: 2rem;
+  }
+
+  .content {
+    padding: 40px 20px;
+  }
+
+  button {
+    width: 100%;
+  }
+}
