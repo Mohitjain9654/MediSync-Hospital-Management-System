@@ -23,5 +23,15 @@ A full-stack web application built to streamline hospital operations including p
 
 ## 📷 Screenshots
 
-```md
-![Dashboard View](./screenshots/dashboard.png)
+### 🧠 Admin Dashboard
+![Admin Dashboard](./screenshots/dashboard.png)
+
+### 🧑‍⚕️ Add New Patient
+![Add Patient](./screenshots/add-patient.png)
+
+### 📅 Appointments List
+![Appointments](./screenshots/appointments.png)
+
+### 💳 Billing Interface
+![Billing](./screenshots/billing.png)
+
