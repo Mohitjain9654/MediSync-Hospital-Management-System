@@ -23,7 +23,5 @@ A full-stack web application built to streamline hospital operations including p
 
 ## 📷 Screenshots
 
-> *(Add screenshots here using markdown image syntax once you upload them to the repo)*
-
 ```md
 ![Dashboard View](./screenshots/dashboard.png)
